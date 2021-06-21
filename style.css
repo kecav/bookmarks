@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    font-family: 'Source Code Pro', monospace;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(49, 71, 119);
+    align-items: center;
+    background-color: rgb(0 0 0 / 84%);
+}
+
+header {
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 1rem 2rem;
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    column-gap: 2rem;
+    color: #fff;
+}
+
+.bookmark-items {
+    margin: 2rem auto;
+    padding: 2rem;
+    display: flex;
+    flex-direction: row;
+    column-gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 2rem;
+    max-width: 70rem;
+}
+
+.bookmark-item {
+    background-color: #fff;
+    color: #000;
+    padding: 1.5rem 2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 2rem;
+    justify-content: center;
+    border-radius: 0.5rem;
+    box-shadow: 0 1rem 2rem 0 #0000002b;
+    position: relative;
+}
+
+.form-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#form-message {
+    color: green;
+}
+
+#background-blur {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    backdrop-filter: blur(5px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.25);
+}
+
+#add-bookmark-form {
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    position: relative;
+}
+
+#add-bookmark-form input {
+    font-size: 1rem;
+    padding: 0.5rem;
+    margin: 0 0 1rem;
+    border-radius: 0.5rem;
+    outline: none;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.075);
+    width: 18rem;
+}
+
+#add-bookmark-form input[type=submit] {
+    background-color: rgb(235, 102, 25);
+    color: #fff;
+    font-weight: 600;
+    width: min-content;
+    right: 0;
+}
+
+#bookmark-logo {
+    width: 2rem;
+    height: 2rem;
+    object-fit: contain;
+}
+
+#delete-Btn {
+    position: absolute;
+    top: -0.75rem;
+    right: -0.75rem;
+    font-size: 1rem;
+    cursor: pointer;
+    color: #fff;
+    background: red;
+    border-radius: 50%;
+    width: 1.5rem;
+    height: 1.5rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#close-Btn {
+    font-size: 1.5rem;
+    text-align: right;
+    cursor: pointer;
+}
+
+#add-bookmark-btn {
+    cursor: pointer;
+}
+
+@media screen and (max-width:450px) {
+    body {
+        height: auto;
+    }
+    .header-text {
+        font-size: 1.5rem;
+    }
+    .bookmark-items {
+        padding: 0;
+    }
+    .bookmark-item {
+        padding: 1rem;
+    }
+}
