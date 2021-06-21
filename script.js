@@ -136,7 +136,8 @@ function buildBookmarks() {
 
         // anchor url
         const anchor = document.createElement('a');
-        anchor.setAttribute('href', `${url}`);
+        anchor.setAttribute('href', `${url}`);        
+        anchor.setAttribute('rel', 'noopener');
         anchor.setAttribute('target', '_blank')
         anchor.textContent = name;
 
