@@ -124,7 +124,6 @@ function buildBookmarks() {
         //Close icon
         const closeIcon = document.createElement('p');
         closeIcon.textContent = "X";
-        // closeIcon.classList.add('fas', 'fa-window-close');
         closeIcon.setAttribute('id', 'delete-Btn');
         closeIcon.setAttribute('title', 'delete this bookmark');
         closeIcon.setAttribute('onClick', `deleteBookmark('${url}')`);
@@ -133,7 +132,6 @@ function buildBookmarks() {
         const icon = document.createElement('img');
         icon.setAttribute('id', 'bookmark-logo');
         icon.setAttribute('src', `https://s2.googleusercontent.com/s2/favicons?domain=${url}`);
-        // icon.setAttribute('src', 'https://www.heropatterns.com/img/avatar.png');
         icon.setAttribute('alt', 'Bookmark');
 
         // anchor url
